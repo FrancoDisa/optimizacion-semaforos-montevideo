@@ -1,0 +1,161 @@
+{
+  "network_name": "Av. Brasil - Pocitos",
+  "location": "Pocitos, Montevideo, Uruguay",
+  "description": "Red de 5 intersecciones semaforizadas en Avenida Brasil",
+  "total_intersections": 5,
+  "date_created": "2025-10-28",
+
+  "network_properties": {
+    "main_avenue": "Av. Brasil",
+    "direction": "Este-Oeste",
+    "speed_limit_kmh": 45,
+    "lanes_per_direction": 2,
+    "avg_block_length_m": 250
+  },
+
+  "intersections": [
+    {
+      "id": 1,
+      "name": "Av. Brasil y Rambla República del Perú",
+      "short_name": "Brasil-Rambla",
+      "coordinates": {
+        "lat": -34.9089,
+        "lon": -56.1536
+      },
+      "type": "rambla_intersection",
+      "importance": "high",
+      "notes": "Intersección con la rambla, alto tráfico turístico"
+    },
+    {
+      "id": 2,
+      "name": "Av. Brasil y Juan Benito Blanco",
+      "short_name": "Brasil-Benito Blanco",
+      "coordinates": {
+        "lat": -34.9067,
+        "lon": -56.1560
+      },
+      "type": "residential_street",
+      "importance": "medium",
+      "notes": "Calle residencial, flujo moderado"
+    },
+    {
+      "id": 3,
+      "name": "Av. Brasil y Lázaro Gadea",
+      "short_name": "Brasil-Gadea",
+      "coordinates": {
+        "lat": -34.9045,
+        "lon": -56.1584
+      },
+      "type": "residential_street",
+      "importance": "medium",
+      "notes": "Zona residencial y comercial"
+    },
+    {
+      "id": 4,
+      "name": "Av. Brasil y Alejandro Chucarro",
+      "short_name": "Brasil-Chucarro",
+      "coordinates": {
+        "lat": -34.9023,
+        "lon": -56.1608
+      },
+      "type": "residential_street",
+      "importance": "medium",
+      "notes": "Calle residencial"
+    },
+    {
+      "id": 5,
+      "name": "Av. Brasil y Paulino Pimienta",
+      "short_name": "Brasil-Pimienta",
+      "coordinates": {
+        "lat": -34.9001,
+        "lon": -56.1632
+      },
+      "type": "residential_street",
+      "importance": "medium",
+      "notes": "Límite del área de estudio"
+    }
+  ],
+
+  "edges": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "from_name": "Brasil-Rambla",
+      "to_name": "Brasil-Benito Blanco",
+      "direction": "oeste",
+      "length_m": 280,
+      "travel_time_s": 22,
+      "lanes": 2
+    },
+    {
+      "from_id": 2,
+      "to_id": 1,
+      "from_name": "Brasil-Benito Blanco",
+      "to_name": "Brasil-Rambla",
+      "direction": "este",
+      "length_m": 280,
+      "travel_time_s": 22,
+      "lanes": 2
+    },
+    {
+      "from_id": 2,
+      "to_id": 3,
+      "from_name": "Brasil-Benito Blanco",
+      "to_name": "Brasil-Gadea",
+      "direction": "oeste",
+      "length_m": 270,
+      "travel_time_s": 22,
+      "lanes": 2
+    },
+    {
+      "from_id": 3,
+      "to_id": 2,
+      "from_name": "Brasil-Gadea",
+      "to_name": "Brasil-Benito Blanco",
+      "direction": "este",
+      "length_m": 270,
+      "travel_time_s": 22,
+      "lanes": 2
+    },
+    {
+      "from_id": 3,
+      "to_id": 4,
+      "from_name": "Brasil-Gadea",
+      "to_name": "Brasil-Chucarro",
+      "direction": "oeste",
+      "length_m": 260,
+      "travel_time_s": 21,
+      "lanes": 2
+    },
+    {
+      "from_id": 4,
+      "to_id": 3,
+      "from_name": "Brasil-Chucarro",
+      "to_name": "Brasil-Gadea",
+      "direction": "este",
+      "length_m": 260,
+      "travel_time_s": 21,
+      "lanes": 2
+    },
+    {
+      "from_id": 4,
+      "to_id": 5,
+      "from_name": "Brasil-Chucarro",
+      "to_name": "Brasil-Pimienta",
+      "direction": "oeste",
+      "length_m": 265,
+      "travel_time_s": 21,
+      "lanes": 2
+    },
+    {
+      "from_id": 5,
+      "to_id": 4,
+      "from_name": "Brasil-Pimienta",
+      "to_name": "Brasil-Chucarro",
+      "direction": "este",
+      "length_m": 265,
+      "travel_time_s": 21,
+      "lanes": 2
+    }
+  ]
+}
