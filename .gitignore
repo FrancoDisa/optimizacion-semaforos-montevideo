@@ -205,3 +205,21 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Project-specific
+# Resultados de experimentos
+experiments/results/*.csv
+experiments/results/*.json
+experiments/results/*.png
+experiments/results/*.pdf
+
+# Archivos de simulación temporales
+simulation.log
+*.sim
+
+# Visualizaciones generadas
+*.gif
+plots/
+
+# Datos temporales
+data/temp/

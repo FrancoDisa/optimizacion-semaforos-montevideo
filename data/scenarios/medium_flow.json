@@ -1,0 +1,60 @@
+{
+  "scenario_name": "Flujo Medio",
+  "description": "Condiciones normales de operación",
+  "traffic_level": "medium",
+  "time_period": "9:00-18:00 (horario laboral normal)",
+
+  "global_parameters": {
+    "simulation_duration_s": 3600,
+    "vehicle_spawn_rate_veh_per_hour": 400,
+    "avg_speed_kmh": 35,
+    "congestion_level": 0.5
+  },
+
+  "traffic_generation": {
+    "distribution": "poisson",
+    "lambda_vehicles_per_minute": 6.67,
+    "origin_destination_matrix": {
+      "rambla_to_interior": 0.5,
+      "interior_to_rambla": 0.5
+    }
+  },
+
+  "intersection_flows": [
+    {
+      "intersection_id": 1,
+      "flow_east_west": 200,
+      "flow_west_east": 200,
+      "flow_north_south": 50,
+      "flow_south_north": 40
+    },
+    {
+      "intersection_id": 2,
+      "flow_east_west": 210,
+      "flow_west_east": 190,
+      "flow_north_south": 60,
+      "flow_south_north": 60
+    },
+    {
+      "intersection_id": 3,
+      "flow_east_west": 200,
+      "flow_west_east": 200,
+      "flow_north_south": 70,
+      "flow_south_north": 70
+    },
+    {
+      "intersection_id": 4,
+      "flow_east_west": 190,
+      "flow_west_east": 210,
+      "flow_north_south": 60,
+      "flow_south_north": 60
+    },
+    {
+      "intersection_id": 5,
+      "flow_east_west": 180,
+      "flow_west_east": 220,
+      "flow_north_south": 50,
+      "flow_south_north": 50
+    }
+  ]
+}

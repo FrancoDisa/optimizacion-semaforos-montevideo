@@ -1,0 +1,60 @@
+{
+  "scenario_name": "Flujo Bajo",
+  "description": "Tránsito fluido fuera de hora pico",
+  "traffic_level": "low",
+  "time_period": "10:00-16:00 (hora valle)",
+
+  "global_parameters": {
+    "simulation_duration_s": 3600,
+    "vehicle_spawn_rate_veh_per_hour": 150,
+    "avg_speed_kmh": 40,
+    "congestion_level": 0.2
+  },
+
+  "traffic_generation": {
+    "distribution": "poisson",
+    "lambda_vehicles_per_minute": 2.5,
+    "origin_destination_matrix": {
+      "rambla_to_interior": 0.55,
+      "interior_to_rambla": 0.45
+    }
+  },
+
+  "intersection_flows": [
+    {
+      "intersection_id": 1,
+      "flow_east_west": 80,
+      "flow_west_east": 70,
+      "flow_north_south": 20,
+      "flow_south_north": 15
+    },
+    {
+      "intersection_id": 2,
+      "flow_east_west": 75,
+      "flow_west_east": 75,
+      "flow_north_south": 25,
+      "flow_south_north": 25
+    },
+    {
+      "intersection_id": 3,
+      "flow_east_west": 70,
+      "flow_west_east": 80,
+      "flow_north_south": 30,
+      "flow_south_north": 30
+    },
+    {
+      "intersection_id": 4,
+      "flow_east_west": 65,
+      "flow_west_east": 85,
+      "flow_north_south": 25,
+      "flow_south_north": 25
+    },
+    {
+      "intersection_id": 5,
+      "flow_east_west": 60,
+      "flow_west_east": 90,
+      "flow_north_south": 20,
+      "flow_south_north": 20
+    }
+  ]
+}

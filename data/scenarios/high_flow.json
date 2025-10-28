@@ -1,0 +1,64 @@
+{
+  "scenario_name": "Flujo Alto - Hora Pico",
+  "description": "Hora pico con demanda saturada",
+  "traffic_level": "high",
+  "time_period": "18:00-19:30 (hora pico tarde)",
+
+  "global_parameters": {
+    "simulation_duration_s": 3600,
+    "vehicle_spawn_rate_veh_per_hour": 750,
+    "avg_speed_kmh": 25,
+    "congestion_level": 0.8
+  },
+
+  "traffic_generation": {
+    "distribution": "poisson",
+    "lambda_vehicles_per_minute": 12.5,
+    "origin_destination_matrix": {
+      "rambla_to_interior": 0.25,
+      "interior_to_rambla": 0.75
+    },
+    "peak_factor": 1.3,
+    "notes": "Flujo asimétrico: mayoría regresando desde centro hacia Pocitos/costa"
+  },
+
+  "intersection_flows": [
+    {
+      "intersection_id": 1,
+      "flow_east_west": 150,
+      "flow_west_east": 600,
+      "flow_north_south": 80,
+      "flow_south_north": 60,
+      "notes": "Alto flujo hacia la rambla (regreso)"
+    },
+    {
+      "intersection_id": 2,
+      "flow_east_west": 170,
+      "flow_west_east": 580,
+      "flow_north_south": 100,
+      "flow_south_north": 100
+    },
+    {
+      "intersection_id": 3,
+      "flow_east_west": 180,
+      "flow_west_east": 570,
+      "flow_north_south": 120,
+      "flow_south_north": 120
+    },
+    {
+      "intersection_id": 4,
+      "flow_east_west": 190,
+      "flow_west_east": 560,
+      "flow_north_south": 100,
+      "flow_south_north": 100
+    },
+    {
+      "intersection_id": 5,
+      "flow_east_west": 200,
+      "flow_west_east": 550,
+      "flow_north_south": 80,
+      "flow_south_north": 80,
+      "notes": "Entrada desde el interior de la ciudad"
+    }
+  ]
+}
