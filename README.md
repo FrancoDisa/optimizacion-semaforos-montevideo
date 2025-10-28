@@ -2,8 +2,7 @@
 
 Proyecto Final - Algoritmos Avanzados de Búsqueda y Optimización  
 **Autor:** Franco Di Salvatore  
-**Fecha:** Octubre 2025  
-**Universidad:** [Tu Universidad]
+**Fecha:** Noviembre 2025  
 
 ## 📋 Descripción
 
