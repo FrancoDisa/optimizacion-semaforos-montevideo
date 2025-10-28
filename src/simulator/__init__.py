@@ -11,6 +11,8 @@ Este módulo contiene el motor de simulación que modela:
 from .traffic_network import TrafficNetwork, Intersection, RoadSegment
 from .traffic_light import TrafficLight, TrafficLightPhase, LightState
 from .vehicle import Vehicle, VehicleState
+from .traffic_generator import TrafficGenerator, TrafficScenario
+from .traffic_simulator import TrafficSimulator
 
 __all__ = [
     'TrafficNetwork',
@@ -20,5 +22,8 @@ __all__ = [
     'TrafficLightPhase',
     'LightState',
     'Vehicle',
-    'VehicleState'
+    'VehicleState',
+    'TrafficGenerator',
+    'TrafficScenario',
+    'TrafficSimulator'
 ]
